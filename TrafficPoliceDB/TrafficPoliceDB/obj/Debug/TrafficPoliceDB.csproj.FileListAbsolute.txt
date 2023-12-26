@@ -20,3 +20,4 @@ C:\Users\Даниил\source\repos\TrafficPoliceDB\TrafficPoliceDB\bin\Debug\Mic
 C:\Users\Даниил\source\repos\TrafficPoliceDB\TrafficPoliceDB\obj\Debug\TrafficPoliceDB.csproj.CopyComplete
 C:\Users\Даниил\source\repos\TrafficPoliceDB\TrafficPoliceDB\bin\Debug\Xceed.Document.NET.dll
 C:\Users\Даниил\source\repos\TrafficPoliceDB\TrafficPoliceDB\bin\Debug\Xceed.Words.NET.dll
+C:\Users\Даниил\source\repos\TrafficPoliceDB\TrafficPoliceDB\obj\Debug\TrafficPoliceDB.Form3.resources
