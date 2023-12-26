@@ -131,7 +131,7 @@ namespace TrafficPoliceDB
             MenuItem item;
             for (int i = 0; i < menu_items.Count; i++)
             {
-                if (menu_items[i].parent_id == 0)
+                if (menu_items[i].parent_id == 0 && menu_items[i].R)
                 {
                     menu.Items.Add(menu_items[i].name);
                     menu.Items[menu.Items.Count - 1].Enabled = menu_items[i].R;
@@ -152,7 +152,7 @@ namespace TrafficPoliceDB
         {
             for (int i = 0; i < menu_items.Count; i++)
             {
-                if (menu_items[i].parent_id > 0)
+                if (menu_items[i].parent_id > 0 && menu_items[i].R)
                 {
                     int index_to_find = menu_items[i].parent_id;
                     int index = menu_items.FindIndex(menu_items => menu_items.item_id == index_to_find);

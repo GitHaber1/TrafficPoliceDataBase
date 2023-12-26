@@ -138,6 +138,23 @@ namespace TrafficPoliceDB
             command.Parameters.AddWithValue("@D", true);
             command.ExecuteNonQuery();
 
+            for (int i = 1; i < 22; i++)
+            {
+                if (i == 5 || i == 6)
+                {
+                    continue;
+                }
+
+                command = new OleDbCommand(query, connection);
+                command.Parameters.AddWithValue("@user_id", new_user_id);
+                command.Parameters.AddWithValue("@menu_id", i);
+                command.Parameters.AddWithValue("@R", false);
+                command.Parameters.AddWithValue("@W", false);
+                command.Parameters.AddWithValue("@E", false);
+                command.Parameters.AddWithValue("@D", false);
+                command.ExecuteNonQuery();
+            }
+
             connection.Close();
 
             MessageBox.Show("Регистрация прошла успешно!");
