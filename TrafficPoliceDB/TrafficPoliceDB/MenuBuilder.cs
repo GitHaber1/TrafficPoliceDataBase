@@ -157,7 +157,7 @@ namespace TrafficPoliceDB
                     int index_to_find = menu_items[i].parent_id;
                     int index = menu_items.FindIndex(menu_items => menu_items.item_id == index_to_find);
 
-                    if (index > menu_items.Count - 1 || index < 0)
+                    if (index > menu_items.Count - 1 || index < 0 || !menu_items[index].R)
                         return;
 
                     ToolStripMenuItem item = (ToolStripMenuItem)menu.Items[menu_items[index].menu_index];                 
